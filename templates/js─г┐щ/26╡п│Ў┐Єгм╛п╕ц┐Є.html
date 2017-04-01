@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>弹出框</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="../css/bootstrap-theme.css" type="text/css">
+    <script type="application/javascript" src="../js/jquery-1.12.4.js"></script>
+    <script language="JavaScript" src="../js/bootstrap.js"> </script>
+</head>
+<body>
+<div class="container">
+    <div style="margin: 200px;">
+        <button type="button" class="btn btn-success"
+        title="向左显示"
+        data-content="内容"
+        data-toggle="popover" data-placement="left"
+        >  按钮
+        </button>
+    </div>
+
+</div>
+<script language="JavaScript">
+    $(function () {
+
+
+    $('[data-toggle="popover"]').popover();
+    });
+</script>
+</body>
+</html>

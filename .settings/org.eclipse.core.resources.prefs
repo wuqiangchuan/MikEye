@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+encoding//HardWareInfo/models.py=utf-8
+encoding//MikEye/settings.py=utf-8
+encoding//WebAdmin/views.py=utf-8
+encoding//monitor01/admin.py=utf-8
+encoding//monitor01/comm.py=utf-8
+encoding//monitor01/models.py=utf-8
+encoding//monitor01/serilalizer.py=utf-8
+encoding//monitor01/views.py=utf-8
+encoding/start_uwsgi.py=utf-8
+encoding/test_uwsgi.py=utf-8

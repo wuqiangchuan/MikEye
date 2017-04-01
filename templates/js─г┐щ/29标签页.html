@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>标签页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="../css/bootstrap-theme.css" type="text/css">
+    <script type="application/javascript" src="../js/jquery-1.12.4.js"></script>
+    <script language="JavaScript" src="../js/bootstrap.js"> </script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div data-ride="carousel" id="carousel_container" class="carousel slide">
+                <!-- 图片容器-->
+                <div class="carousel-inner">
+
+                    <div class="item"><img style="width: 600px;height: 400px;" src="../img/ab.jpg" />
+                        <div class="carousel-caption">
+                            这就是内容。
+                        </div>
+
+                    </div>
+                    <div class="item active"><img style="width: 600px;height: 400px;" src="../img/01.jpg" /></div>
+                    <div class="item"><img style="width: 600px;height: 400px;" src="../img/02.png" /></div>
+                </div>
+
+                <!--小圆圈容器   使用无序列表-->
+                <ol class="carousel-indicators">
+                    <li data-slide-to="0" data-target="#carousel_container"></li>
+                    <li data-slide-to="1" data-target="#carousel_container"></li>
+                    <li data-slide-to="2" data-target="#carousel_container"></li>
+                </ol>
+
+                <!-- 左右按钮 -->
+                <a href="#carousel_container" data-slide="prev" class="left carousel-control">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a href="#carousel_container" data-slide="next" class="right carousel-control">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+
+
+            </div>
+
+
+        </div>
+        <div class="col-md-9"></div>
+    </div>
+
+
+</div>
+
+</body>
+</html>

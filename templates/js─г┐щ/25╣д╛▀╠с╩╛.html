@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>标签页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="../css/bootstrap-theme.css" type="text/css">
+    <script type="application/javascript" src="../js/jquery-1.12.4.js"></script>
+    <script language="JavaScript" src="../js/bootstrap.js"> </script>
+</head>
+<body>
+<div class="container">
+    <button type="button" style="margin-top: 200px;" class="btn btn-success" data-toggle="tooltip" data-placement="left" title="我们就是">我们就是哈哈哈哈</button>
+
+
+    <button  id="Cshow" type="button" style="margin-top: 200px;" class="btn btn-success" data-toggle="tooltip" data-placement="left" title="我们就">单击才显示按钮内容</button>
+</div>
+
+<script language="JavaScript">
+    $(function () {
+      // $('#cshow').click(function () {       本来这两行用来单击才显示的。但是遇到的问题，Mabey next time.
+        //   $('[data-toggle="tooltip"]').tooltip("show");
+
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+
+</script>
+
+</body>
+</html>

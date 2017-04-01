@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>按钮组</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="../css/bootstrap-theme.css" type="text/css">
+    <script type="application/javascript" src="../js/jquery-1.12.4.js"></script>
+    <script language="JavaScript" src="../js/bootstrap.js"> </script>
+</head>
+<body>
+<div class="container">
+<div class="btn-group">
+    <button type="button" class="btn btn-primary">工具1</button>
+    <button type="button" class="btn btn-primary">工具2</button>
+</div>
+    <hr/>
+    <!-- 按钮组中嵌套下来菜单 -- 水平-->
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary">工具1</button>
+        <button type="button" class="btn btn-primary">工具2</button>
+        <div class="btn-group  dropdown">
+            <button class="btn-group btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                下拉
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li class="btn-success">项目1</li>
+                <li class="btn-success">项目2</li>
+                <li class="btn-success">项目3</li>
+                <li class="btn-success">项目1</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 垂直 -->
+    <div class="btn-group-vertical">
+        <button type="button" class="btn btn-primary">工具1</button>
+        <button type="button" class="btn btn-primary">工具2</button>
+        <div class="btn-group  dropdown">
+            <button class="btn-group btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                下拉
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li class="btn-success">项目1</li>
+                <li class="btn-success">项目2</li>
+                <li class="btn-success">项目3</li>
+                <li class="btn-success">项目1</li>
+
+
+</div>
+
+</body>
+</html>

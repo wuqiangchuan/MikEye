@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>标签页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="../css/bootstrap-theme.css" type="text/css">
+    <script type="application/javascript" src="../js/jquery-1.12.4.js"></script>
+    <script language="JavaScript" src="../js/bootstrap.js"> </script>
+</head>
+<body>
+<div class="container">
+     <div class="panel-group" id="panelcontainer">
+         <div class="panel-heading">
+             <h3><a href="#" data-toggle="collapse" data-target="#char_mo" data-parent="#panelcontainer">栏目管理</a></h3>
+         </div>
+
+        <div class="panel-collapse collapse" id="char_mo">
+            <div class="panel-body ">
+               <ul>
+                   <li class="list-unstyled"><a href="#">子栏目1</a></li>
+                   <li class="list-unstyled"><a href="#">子栏目2</a></li>
+               </ul>
+            </div>
+        </div>
+
+
+
+         <div class="panel-group">
+             <div class="panel-heading">
+                 <h3><a href="#" data-toggle="collapse" data-target="#char_mo01" id="chane01">栏目管理</a></h3>
+             </div>
+
+             <div class="panel-collapse collapse" id="char_mo01">
+                 <div class="panel-body ">
+                     <ul>
+                         <li class="list-unstyled"><a href="#">子栏目1</a></li>
+                         <li class="list-unstyled"><a href="#">子栏目2</a></li>
+                     </ul>
+                 </div>
+             </div>
+
+
+
+             <div class="panel-group">
+                 <div class="panel-heading">
+                     <h3><a href="#" data-toggle="collapse" data-target="#char_mo02">栏目管理</a></h3>
+                 </div>
+
+                 <div class="panel-collapse collapse" id="char_mo02">
+                     <div class="panel-body ">
+                         <ul>
+                             <li class="list-unstyled"><a href="#">子栏目1</a></li>
+                             <li class="list-unstyled"><a href="#">子栏目2</a></li>
+                         </ul>
+                     </div>
+                 </div>
+
+
+
+                 <div class="panel-group">
+                     <div class="panel-heading">
+                         <h3><a href="#" data-toggle="collapse" data-target="#char_mo03">栏目管理</a></h3>
+                     </div>
+
+                     <div class="panel-collapse collapse" id="char_mo03">
+                         <div class="panel-body ">
+                             <ul>
+                                 <li class="list-unstyled"><a href="#">子栏目1</a></li>
+                                 <li class="list-unstyled"><a href="#">子栏目2</a></li>
+                             </ul>
+                         </div>
+                     </div>
+     </div>
+
+<div id="data_show">
+    这就是提前隐藏的内容。
+</div>
+
+
+<div>
+    <ul>
+         <li>
+         a=2，b=3,sum=?
+        </li>
+         <li id="abc"></li>
+     </ul>
+    <button onclick="myfunc()"  class="btn btn-success">按钮</button>
+</div>
+
+
+<script language="JavaScript">
+    function myfunc() {
+        var a=2;
+        var d=5;
+        var sum1=a+d;
+        document.getElementById('abc').innerHTML=sum1;
+    };
+    
+    $(function () {
+        $('#char_mo02').on('show.bs.collapse', function () {
+            // do something…
+            $('data_show').html('这就是出发后的内容。。。');
+        })
+    })
+</script>
+</body>
+</html>
